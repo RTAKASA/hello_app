@@ -21,11 +21,5 @@ test:
   database: db/test.sqlite3
 
 production:
-  <span style="color: #ff0000;"># </span>production:
-  <span style="color: #ff0000;">#</span>   <<: *default
-  <span style="color: #ff0000;">#</span>   database: db/production.sqlite3
-  <span style="color: #ff0000;">production:
-    <<: *default
-    adapter: postgresql
-    database: db/production.pg</span>
-
+  <<: *default
+  database: db/production.sqlite3
